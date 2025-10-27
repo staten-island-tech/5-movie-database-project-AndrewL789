@@ -39,7 +39,6 @@ find(ti) """
 billy = input('genre? :')
 def gen(x):
     for la in data:
-        for things in la['genres']:
-            if things in la['genres']:
-                print(la['title'])
+            if x in la['genres']:
+                print(la['title'], la['genres'])
 gen(billy) 
