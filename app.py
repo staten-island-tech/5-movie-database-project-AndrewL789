@@ -28,17 +28,21 @@ for smth in data:
         print(smth['title'], smth['year'])  """
 
 #file5
-#ti = input('write :') 
+ti = input('write :') 
 def find(x):
+    alejandro = False 
     for g in data:
         if x.lower() in g['title'].lower():
             print(g['title'])
-#find(ti)
+            alejandro = True
+    if alejandro != True:
+         print(f"There ain't a movie with {x} in it.") 
+find(ti)
 
 #file6 genre
-billy = input('genre? :')
+#billy = input('genre? :')
 def gen(x):
     for la in data:
             if x in la['genres']:
                 print(la['title'], la['genres'])
-gen(billy) 
+#gen(billy)
