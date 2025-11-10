@@ -40,9 +40,15 @@ def find(x):
 find(ti)
 
 #file6 genre
-#billy = input('genre? :')
+billy = input('genre? :')
 def gen(x):
+    found = False
     for la in data:
             if x in la['genres']:
+                found = True
                 print(la['title'], la['genres'])
-#gen(billy)
+    if found == False:
+         print(f"{x} is not a valid genre")
+
+
+gen(billy)
